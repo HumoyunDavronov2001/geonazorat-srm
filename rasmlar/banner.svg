@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="GEONAZORAT SRM — karyer va qurilish materiallari nazorati tizimi">
+  <defs>
+    <linearGradient id="fon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1222"/>
+      <stop offset="1" stop-color="#14254a"/>
+    </linearGradient>
+    <linearGradient id="nur" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60a5fa" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#60a5fa" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#60a5fa" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="tor" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1a2a4a" stroke-width="1"/>
+    </pattern>
+    <style>
+      .sarlavha{font:800 54px 'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif;fill:#f8fafc;letter-spacing:1px}
+      .izoh{font:500 22px 'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif;fill:#94a3b8}
+      .teg{font:600 15px 'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif;fill:#cbd5e1}
+      .mono{font:700 26px 'DejaVu Sans Mono',Consolas,monospace;fill:#34d399}
+      .yorliq{font:700 11px 'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif;fill:#94a3b8;letter-spacing:2px}
+    </style>
+  </defs>
+  <rect width="1280" height="360" fill="url(#fon)"/>
+  <rect width="1280" height="360" fill="url(#tor)" opacity=".55"/>
+
+  <g transform="translate(64 0)">
+    <rect x="0" y="70" width="56" height="56" rx="14" fill="#325ECD"/>
+    <path d="M10 114 L24 90 L32 102 L38 94 L48 114 Z" fill="#e6eeff"/>
+    <circle cx="40" cy="82" r="4" fill="#f5b400"/>
+    <text class="sarlavha" x="0" y="190">GEONAZORAT SRM</text>
+    <text class="izoh" x="0" y="232">Karyer nazorati: ANPR · tarozi · yuk xati · sputnik</text>
+    <g transform="translate(0 270)">
+      <rect width="88" height="30" rx="15" fill="#1e2f55"/><text class="teg" x="44" y="20" text-anchor="middle">FastAPI</text>
+      <rect x="98" width="118" height="30" rx="15" fill="#1e2f55"/><text class="teg" x="157" y="20" text-anchor="middle">SQLAlchemy</text>
+      <rect x="226" width="86" height="30" rx="15" fill="#1e2f55"/><text class="teg" x="269" y="20" text-anchor="middle">Leaflet</text>
+      <rect x="322" width="84" height="30" rx="15" fill="#1e2f55"/><text class="teg" x="364" y="20" text-anchor="middle">Docker</text>
+      <rect x="416" width="70" height="30" rx="15" fill="#1e2f55"/><text class="teg" x="451" y="20" text-anchor="middle">ANPR</text>
+    </g>
+  </g>
+
+  <!-- Darvoza: yuk mashinasi tarozi ustiga chiqadi, raqam skanerlanadi, vazn chiqadi (SMIL) -->
+  <g>
+    <!-- kamera ustuni -->
+    <rect x="1168" y="96" width="8" height="196" fill="#334155"/>
+    <rect x="1124" y="88" width="52" height="22" rx="5" fill="#475569"/>
+    <circle cx="1132" cy="99" r="5" fill="#60a5fa">
+      <animate attributeName="fill" values="#334155;#334155;#60a5fa;#60a5fa;#334155" keyTimes="0;.38;.42;.6;1" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <!-- tarozi platformasi -->
+    <rect x="860" y="286" width="300" height="10" rx="3" fill="#475569"/>
+    <line x1="800" y1="300" x2="1240" y2="300" stroke="#334155" stroke-width="3" stroke-dasharray="14 10"/>
+    <!-- mashina -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="-220 0;0 0;0 0;260 0" keyTimes="0;.32;.72;1" dur="7s" repeatCount="indefinite"/>
+      <rect x="880" y="214" width="160" height="62" rx="6" fill="#b45309"/>
+      <path d="M886 214 L906 196 L1014 196 L1034 214 Z" fill="#a8a29e"/>
+      <rect x="1044" y="226" width="58" height="50" rx="8" fill="#f59e0b"/>
+      <rect x="1074" y="234" width="22" height="16" rx="3" fill="#bfdbfe"/>
+      <rect x="1060" y="256" width="40" height="13" rx="2" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+      <circle cx="912" cy="280" r="12" fill="#0f172a" stroke="#64748b" stroke-width="3"/>
+      <circle cx="1006" cy="280" r="12" fill="#0f172a" stroke="#64748b" stroke-width="3"/>
+      <circle cx="1078" cy="280" r="12" fill="#0f172a" stroke="#64748b" stroke-width="3"/>
+    </g>
+    <!-- ANPR nuri -->
+    <path d="M1126 106 L1060 250 L1110 262 Z" fill="url(#nur)" opacity="0">
+      <animate attributeName="opacity" values="0;0;.55;.55;0;0" keyTimes="0;.36;.4;.58;.62;1" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <!-- vazn tablosi -->
+    <rect x="860" y="70" width="210" height="96" rx="10" fill="#0b1324" stroke="#1e3a5f" stroke-width="2"/>
+    <text class="yorliq" x="878" y="94">TAROZI · ANPR</text>
+    <text class="mono" x="878" y="128" opacity="0">80 A 123 BC
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.42;.46;.9;1" dur="7s" repeatCount="indefinite"/>
+    </text>
+    <text class="mono" x="878" y="156" style="fill:#fbbf24" opacity="0">46,63 t
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.5;.54;.9;1" dur="7s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>
